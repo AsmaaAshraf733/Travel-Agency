@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Packages - Travel Agency</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">Travel Agency</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="destination.html">Destinations</a></li>
+                    <li><a href="packages.html" class="active">Packages</a></li>
+                    <li><a href="booking.html">Booking</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Premium Travel Packages</h1>
+            <p>Choose from a wide range of premium packages we offer for your upcoming trips. Packages to suit all budgets and tastes.</p>
+        </div>
+    </section>
+
+    <!-- Main content -->
+    <main class="container">
+        <!-- Filter elements -->
+        <section class="filter-section">
+            <h3>Filter Packages</h3>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Packages</button>
+                <button class="filter-btn" data-filter="luxury">Luxury</button>
+                <button class="filter-btn" data-filter="family">Family</button>
+                <button class="filter-btn" data-filter="adventure">Adventure</button>
+                <button class="filter-btn" data-filter="budget">Budget</button>
+                <button class="filter-btn" data-filter="honeymoon">Honeymoon</button>
+            </div>
+        </section>
+
+        <!-- Package cards -->
+        <section class="packages-container" id="packages-container">
+            <!-- Package 1 -->
+            <div class="package-card" data-category="luxury">
+                <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Luxury Dubai" class="package-img">
+                <div class="package-content">
+                    <div class="package-header">
+                        <h3 class="package-title">Luxury Dubai</h3>
+                        <span class="package-price">$2,499</span>
+                    </div>
+                    <div class="package-duration">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>7 days / 6 nights</span>
+                    </div>
+                    <span class="package-category">Luxury</span>
+                    <ul class="package-features">
+                        <li><i class="fas fa-check"></i> Accommodation in 5-star hotel</li>
+                        <li><i class="fas fa-check"></i> Daily sightseeing tours</li>
+                        <li><i class="fas fa-check"></i> Breakfast, lunch and dinner</li>
+                        <li><i class="fas fa-check"></i> Entrance tickets to tourist attractions</li>
+                    </ul>
+                    <a href="booking.html" class="btn-book">Book Now</a>
+                </div>
+            </div>
+
+            <!-- Package 2 -->
+            <div class="package-card" data-category="family">
+                <img src="https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80" alt="Family Turkey" class="package-img">
+                <div class="package-content">
+                    <div class="package-header">
+                        <h3 class="package-title">Family Turkey</h3>
+                        <span class="package-price">$1,899</span>
+                    </div>
+                    <div class="package-duration">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>10 days / 9 nights</span>
+                    </div>
+                    <span class="package-category">Family</span>
+                    <ul class="package-features">
+                        <li><i class="fas fa-check"></i> Accommodation in family resort</li>
+                        <li><i class="fas fa-check"></i> Entertainment activities for children</li>
+                        <li><i class="fas fa-check"></i> Organized sightseeing tours</li>
+                        <li><i class="fas fa-check"></i> Comprehensive travel insurance</li>
+                    </ul>
+                    <a href="booking.html" class="btn-book">Book Now</a>
+                </div>
+            </div>
+
+            <!-- Package 3 -->
+            <div class="package-card" data-category="adventure">
+                <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Norway Adventure" class="package-img">
+                <div class="package-content">
+                    <div class="package-header">
+                        <h3 class="package-title">Norway Adventure</h3>
+                        <span class="package-price">$3,200</span>
+                    </div>
+                    <div class="package-duration">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>12 days / 11 nights</span>
+                    </div>
+                    <span class="package-category">Adventure</span>
+                    <ul class="package-features">
+                        <li><i class="fas fa-check"></i> Safari trips and mountain climbing</li>
+                        <li><i class="fas fa-check"></i> Visit Norwegian fjords</li>
+                        <li><i class="fas fa-check"></i> Northern Lights viewing</li>
+                        <li><i class="fas fa-check"></i> Specialized tour guides</li>
+                    </ul>
+                    <a href="booking.html" class="btn-book">Book Now</a>
+                </div>
+            </div>
+
+            <!-- Package 4 -->
+            <div class="package-card" data-category="budget">
+                <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Budget Thailand" class="package-img">
+                <div class="package-content">
+                    <div class="package-header">
+                        <h3 class="package-title">Budget Thailand</h3>
+                        <span class="package-price">$999</span>
+                    </div>
+                    <div class="package-duration">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>8 days / 7 nights</span>
+                    </div>
+                    <span class="package-category">Budget</span>
+                    <ul class="package-features">
+                        <li><i class="fas fa-check"></i> Accommodation in 3-star hotels</li>
+                        <li><i class="fas fa-check"></i> Free sightseeing tours</li>
+                        <li><i class="fas fa-check"></i> Daily breakfast</li>
+                        <li><i class="fas fa-check"></i> Airport transfer</li>
+                    </ul>
+                    <a href="booking.html" class="btn-book">Book Now</a>
+                </div>
+            </div>
+
+            <!-- Package 5 -->
+            <div class="package-card" data-category="honeymoon">
+                <img src="https://images.unsplash.com/photo-1516496636080-14fb876e029d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1076&q=80" alt="Maldives Honeymoon" class="package-img">
+                <div class="package-content">
+                    <div class="package-header">
+                        <h3 class="package-title">Maldives Honeymoon</h3>
+                        <span class="package-price">$4,500</span>
+                    </div>
+                    <div class="package-duration">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>10 days / 9 nights</span>
+                    </div>
+                    <span class="package-category">Honeymoon</span>
+                    <ul class="package-features">
+                        <li><i class="fas fa-check"></i> Overwater bungalow accommodation</li>
+                        <li><i class="fas fa-check"></i> Romantic sunset cruise</li>
+                        <li><i class="fas fa-check"></i> Special dinner meals</li>
+                        <li><i class="fas fa-check"></i> Couple spa treatments</li>
+                    </ul>
+                    <a href="booking.html" class="btn-book">Book Now</a>
+                </div>
+            </div>
+
+            <!-- Package 6 -->
+            <div class="package-card" data-category="luxury">
+                <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Romantic Paris" class="package-img">
+                <div class="package-content">
+                    <div class="package-header">
+                        <h3 class="package-title">Romantic Paris</h3>
+                        <span class="package-price">$2,800</span>
+                    </div>
+                    <div class="package-duration">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>6 days / 5 nights</span>
+                    </div>
+                    <span class="package-category">Luxury</span>
+                    <ul class="package-features">
+                        <li><i class="fas fa-check"></i> Boutique hotel accommodation</li>
+                        <li><i class="fas fa-check"></i> Eiffel Tower tour</li>
+                        <li><i class="fas fa-check"></i> Seine River cruise</li>
+                        <li><i class="fas fa-check"></i> Free travel insurance</li>
+                    </ul>
+                    <a href="booking.html" class="btn-book">Book Now</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Travel Agency</h3>
+                    <p>We help you achieve your dreams of traveling around the world with the best prices and premium services. We offer travel packages to suit all tastes and budgets.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="packages.html">Packages</a></li>
+                        <li><a href="booking.html">Booking</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Travel Street, Cairo</li>
+                        <li><i class="fas fa-phone"></i> +20 100 123 4567</li>
+                        <li><i class="fas fa-envelope"></i> info@travelagency.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>All rights reserved &copy; 2023 Travel Agency</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Filter packages
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const packageCards = document.querySelectorAll('.package-card');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    // Get filter value
+                    const filterValue = this.getAttribute('data-filter');
+                    
+                    // Filter cards
+                    packageCards.forEach(card => {
+                        if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+            
+            // Effects for cards on scroll
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+            
+            // Set initial properties for cards
+            packageCards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                card.style.transitionDelay = (index * 0.1) + 's';
+                
+                observer.observe(card);
+            });
+        });
+    </script>
+</body>
+</html>

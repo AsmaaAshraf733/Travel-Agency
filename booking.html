@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Booking - Travel Agency</title>
+  <link rel="stylesheet" href="styles.css">
+  <style></style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <nav>
+        <a href="#" class="logo">Travel Agency</a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="destination.html">Destinations</a></li>
+          <li><a href="packages.html">Packages</a></li>
+          <li><a href="booking.html" class="active">Booking</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!--<header>
+  <h1>Book Your Trip With Us ✈️</h1>
+</header>-->
+
+  <main>
+    <h2>Booking Form</h2>
+    <form id="bookingForm">
+      <label for="name">👤 Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <label for="email">📧 Email:</label>
+      <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+
+      <label for="phone">📞 Phone Number:</label>
+      <input type="tel" id="phone" name="phone" placeholder="+20 123456789" pattern="\+\d{1,3} \d{6,12}" required>
+
+      <label for="destination">🗺️ Destination:</label>
+      <select id="destination" name="destination" required>
+        <option value="">Where to?</option>
+        <option value="Dubai">Dubai</option>
+        <option value="Turkey">Turkey</option>
+        <option value="Norway">Norway</option>
+        <option value="Thailand">Thailand</option>
+        <option value="Maldives">Maldives</option>
+        <option value="Paris">Paris</option>
+      </select>
+
+      <label for="people">👥 Number of People:</label>
+      <input type="number" id="people" name="people" min="1" placeholder="1" required>
+
+      <label for="date">📅 Trip Date:</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="ticket">🎫 Ticket Type:</label>
+      <select id="ticket" name="ticket" required>
+        <option value="">Choose ticket type</option>
+        <option value="Economy">Economy</option>
+        <option value="Business">Business</option>
+        <option value="First Class">First Class</option>
+      </select>
+
+      <label for="payment">💳 Payment Method:</label>
+      <select id="payment" name="payment" required>
+        <option value="">Choose payment method</option>
+        <option value="Credit Card">Credit Card</option>
+        <option value="Bank Transfer">Bank Transfer</option>
+      </select>
+
+      <input type="submit" value="Book Now">
+    </form>
+
+    <div id="confirmation" class="confirmation" style="display:none;"></div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Travel Agency</h3>
+          <p>We help you achieve your dreams of traveling around the world with the best prices and premium services. We
+            offer travel packages to suit all tastes and budgets.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="packages.html">Packages</a></li>
+            <li><a href="booking.html">Booking</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <ul class="footer-links">
+            <li><i class="fas fa-map-marker-alt"></i> 123 Travel Street, Cairo</li>
+            <li><i class="fas fa-phone"></i> +20 100 123 4567</li>
+            <li><i class="fas fa-envelope"></i> info@travelagency.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>All rights reserved &copy; 2023 Travel Agency</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script>
+    const form = document.getElementById('bookingForm');
+    const confirmation = document.getElementById('confirmation');
+
+    function generateBookingNumber() {
+      return 'TRV' + Math.floor(Math.random() * 1000000);
+    }
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const bookingNumber = generateBookingNumber();
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const phone = document.getElementById('phone').value;
+      const destination = document.getElementById('destination').value;
+      const people = document.getElementById('people').value;
+      const date = document.getElementById('date').value;
+      const ticket = document.getElementById('ticket').value;
+      const payment = document.getElementById('payment').value;
+
+      confirmation.style.display = 'block';
+      confirmation.innerHTML = `
+      <h3>✅ Booking Confirmed!</h3>
+      <p>Booking Number: <strong>${bookingNumber}</strong></p>
+      <p>Name: ${name}</p>
+      <p>Email: ${email}</p>
+      <p>Phone: ${phone}</p>
+      <p>Destination: ${destination}</p>
+      <p>Number of People: ${people}</p>
+      <p>Trip Date: ${date}</p>
+      <p>Ticket Type: ${ticket}</p>
+      <p>Payment Method: ${payment}</p>
+    `;
+
+      form.reset();
+    });
+  </script>
+
+</body>
+
+</html>

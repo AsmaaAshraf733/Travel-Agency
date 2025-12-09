@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency - Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">Travel Agency</a>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="destination.html">Destinations</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                    <li><a href="booking.html">Booking</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero hero-home">
+        <div class="container">
+            <h1>Travel & Adventures</h1>
+            <p>Discover amazing destinations around the world</p>
+            <button class="btn-hero" onclick="location.href='booking.html'">Explore Now</button>
+        </div>
+    </div>
+
+    <!-- Search/Filter Section -->
+    <section class="search-section">
+        <div class="container">
+            <div class="search-box">
+                <input type="text" placeholder="Search destinations...">
+                <select>
+                    <option>All Categories</option>
+                    <option>Beach</option>
+                    <option>Mountain</option>
+                    <option>City</option>
+                </select>
+                <button><i class="fas fa-search"></i> Search</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Most Popular Tours -->
+    <section class="popular-section">
+        <div class="container">
+            <h2 class="section-title">Most Popular Tours</h2>
+            <div class="tours-grid">
+                <div class="tour-card">
+                    <img src="/images/Paris.jpg" alt="Paris">
+                    <h3>Paris City Tour</h3>
+                    <p>Experience the magic of the City of Lights</p>
+                    <div class="tour-footer">
+                        <span class="price">$1,299</span>
+                        <a href="packages.html" class="btn-small">Learn More</a>
+                    </div>
+                </div>
+                <div class="tour-card">
+                    <img src="/images/Bali.png" alt="Bali">
+                    <h3>Bali Beach Escape</h3>
+                    <p>Relax on pristine beaches and explore culture</p>
+                    <div class="tour-footer">
+                        <span class="price">$899</span>
+                        <a href="packages.html" class="btn-small">Learn More</a>
+                    </div>
+                </div>
+                <div class="tour-card">
+                    <img src="/images/New York.png" alt="New York">
+                    <h3>New York Explorer</h3>
+                    <p>Discover the city that never sleeps</p>
+                    <div class="tour-footer">
+                        <span class="price">$1,599</span>
+                        <a href="packages.html" class="btn-small">Learn More</a>
+                    </div>
+                </div>
+                <div class="tour-card">
+                    <img src="/images/Tokyo.png" alt="Tokyo">
+                    <h3>Tokyo Adventure</h3>
+                    <p>Experience modern Japan and ancient temples</p>
+                    <div class="tour-footer">
+                        <span class="price">$1,799</span>
+                        <a href="packages.html" class="btn-small">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Destinations Showcase -->
+    <section class="destination-showcase">
+        <div class="container">
+            <h2 class="section-title">Our Destinations Showcase</h2>
+            <div class="showcase-grid">
+                <div class="showcase-item large">
+                    <img src="/images/Dubai.png" alt="Dubai">
+                    <h3>Dubai</h3>
+                </div>
+                <div class="showcase-item">
+                    <img src="/images/Venice.png" alt="Venice">
+                    <h3>Venice</h3>
+                </div>
+                <div class="showcase-item">
+                    <img src="/images/Rome.png" alt="Rome">
+                    <h3>Rome</h3>
+                </div>
+                <div class="showcase-item">
+                    <img src="/images/Barcelona.png" alt="Barcelona">
+                    <h3>Barcelona</h3>
+                </div>
+                <div class="showcase-item">
+                    <img src="/images/London.png" alt="London">
+                    <h3>London</h3>
+                </div>
+                <div class="showcase-item large">
+                    <img src="/images/Sydney.png" alt="Sydney">
+                    <h3>Sydney</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tour Type Section -->
+    <section class="tour-type-section">
+        <div class="container">
+            <h2 class="section-title">Best Tour Types</h2>
+            <div class="tour-types">
+                <div class="type-card">
+                    <i class="fas fa-umbrella-beach"></i>
+                    <h3>Beach Resorts</h3>
+                    <p>Relax on stunning beaches</p>
+                </div>
+                <div class="type-card">
+                    <i class="fas fa-mountain"></i>
+                    <h3>Mountain Adventure</h3>
+                    <p>Explore mountain landscapes</p>
+                </div>
+                <div class="type-card">
+                    <i class="fas fa-city"></i>
+                    <h3>City Tours</h3>
+                    <p>Experience urban culture</p>
+                </div>
+                <div class="type-card">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Food Tours</h3>
+                    <p>Taste local cuisine</p>
+                </div>
+                <div class="type-card">
+                    <i class="fas fa-hiking"></i>
+                    <h3>Hiking Trips</h3>
+                    <p>Adventure through nature</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title">What Travelers Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Amazing experience! The tour was well-organized and the guides were knowledgeable."</p>
+                    <h4>John Smith</h4>
+                    <span>Verified Traveler</span>
+                </div>
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Best vacation ever! Great value for money and unforgettable memories."</p>
+                    <h4>Sarah Johnson</h4>
+                    <span>Verified Traveler</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Travel Guides -->
+    <section class="guides-section">
+        <div class="container">
+            <h2 class="section-title">Latest Travel Guides</h2>
+            <div class="guides-grid">
+                <div class="guide-card">
+                    <img src="/images/Top 10 European Destinations.png" alt="Guide">
+                    <h3>Top 10 European Destinations</h3>
+                    <p>Discover the most beautiful cities in Europe</p>
+                    <a href="#" class="btn-read">Read More</a>
+                </div>
+                <div class="guide-card">
+                    <img src="/images/Budget Travel Tips.png" alt="Guide">
+                    <h3>Budget Travel Tips</h3>
+                    <p>Travel smart and save money on your adventures</p>
+                    <a href="#" class="btn-read">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Travel Agency</h3>
+                    <p>We help you achieve your dreams of traveling around the world with the best prices and premium
+                        services.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="destination.html">Destinations</a></li>
+                        <li><a href="packages.html">Packages</a></li>
+                        <li><a href="booking.html">Booking</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Travel Street, Cairo</li>
+                        <li><i class="fas fa-phone"></i> +20 100 123 4567</li>
+                        <li><i class="fas fa-envelope"></i> info@travelagency.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>All rights reserved &copy; 2024 Travel Agency</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

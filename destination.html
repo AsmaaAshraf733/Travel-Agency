@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations - Travel Agency</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">Travel Agency</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="destination.html" class="active">Destinations</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                    <li><a href="booking.html">Booking</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero hero-destination">
+        <div class="container">
+            <h1>Our Destinations</h1>
+            <p>Explore the most beautiful places around the world</p>
+        </div>
+    </div>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <div class="container">
+            <div class="search-box">
+                <input type="text" placeholder="Search destinations...">
+                <select>
+                    <option>All Categories</option>
+                    <option>Beach</option>
+                    <option>Mountain</option>
+                    <option>City</option>
+                </select>
+                <button><i class="fas fa-search"></i> Search</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container">
+        <h2 class="section-title">Popular Destinations</h2>
+
+        <div class="destination-grid">
+            <div class="destination-card" data-name="Paris" data-img="images/Paris.jpg"
+                data-desc="Experience the magic of the City of Lights with iconic landmarks and world-class cuisine.">
+                <img src="images/Paris.jpg" alt="Paris">
+                <h3>Paris</h3>
+                <p>Experience the magic of the City of Lights with iconic landmarks and world-class cuisine.</p>
+                <div class="destination-footer">
+                    <button class="btn open-dialog" data-target="dest-dialog">Learn More</button>
+                    <a href="packages.html" class="btn">View Packages</a>
+                </div>
+            </div>
+
+            <div class="destination-card" data-name="Maldivs" data-img="images/Maldivs.jpg"
+                data-desc="Crystal-clear beaches, water villas, and unforgettable romance.">
+                <img src="images/Maldivs.jpg" alt="Maldivs">
+                <h3>Maldivs</h3>
+                <p>Crystal-clear beaches, water villas, and unforgettable romance.</p>
+                <div class="destination-footer">
+                    <button class="btn open-dialog" data-target="dest-dialog">Learn More</button>
+                    <a href="packages.html" class="btn">View Packages</a>
+                </div>
+            </div>
+
+            <div class="destination-card" data-name="Norway" data-img="images/Norway.jpg"
+                data-desc="Enjoy mountain trekking, fjords, and northern lights exploration.">
+                <img src="images/Norway.jpg" alt="Norway">
+                <h3>Norway</h3>
+                <p>Enjoy mountain trekking, fjords, and northern lights exploration.</p>
+                <div class="destination-footer">
+                    <button class="btn open-dialog" data-target="dest-dialog">Learn More</button>
+                    <a href="packages.html" class="btn">View Packages</a>
+                </div>
+            </div>
+
+            <div class="destination-card" data-name="Tailand" data-img="images/Tailand.jpg"
+                data-desc="Relax on beaches, explore temples, and enjoy nature retreats.">
+                <img src="images/Tailand.jpg" alt="Tailand">
+                <h3>Tailand</h3>
+                <p>Relax on beaches, explore temples, and enjoy nature retreats.</p>
+                <div class="destination-footer">
+                    <button class="btn open-dialog" data-target="dest-dialog">Learn More</button>
+                    <a href="packages.html" class="btn">View Packages</a>
+                </div>
+            </div>
+
+            <div class="destination-card" data-name="Dubai" data-img="images/Dubai.png"
+                data-desc="Luxury shopping, stunning architecture, and golden deserts await you.">
+                <img src="images/Dubai.png" alt="Dubai">
+                <h3>Dubai</h3>
+                <p>Luxury shopping, stunning architecture, and golden deserts await you.</p>
+                <div class="destination-footer">
+                    <button class="btn open-dialog" data-target="dest-dialog">Learn More</button>
+                    <a href="packages.html" class="btn">View Packages</a>
+                </div>
+            </div>
+
+            <div class="destination-card" data-name="Turkey" data-img="images/TURKEY.jpg"
+                data-desc="Perfect blend of history, beaches, culture and family adventures.">
+                <img src="images/TURKEY.jpg" alt="TURKEY">
+                <h3>TURKEY</h3>
+                <p>Perfect blend of history, beaches, culture and family adventures.</p>
+                <div class="destination-footer">
+                    <button class="btn open-dialog" data-target="dest-dialog">Learn More</button>
+                    <a href="packages.html" class="btn">View Packages</a>
+                </div>
+            </div>
+
+            <div class="destination-card" data-name="London" data-img="images/London.png"
+                data-desc="Discover royal palaces, historic landmarks, and world-renowned museums.">
+                <img src="images/London.png" alt="London">
+                <h3>London</h3>
+                <p>Discover royal palaces, historic landmarks, and world-renowned museums.</p>
+                <div class="destination-footer">
+                    <button class="btn open-dialog" data-target="dest-dialog">Learn More</button>
+                    <a href="packages.html" class="btn">View Packages</a>
+                </div>
+            </div>
+
+            <div class="destination-card" data-name="Sydney" data-img="images/Sydney.png"
+                data-desc="Beautiful beaches, iconic Opera House, and friendly locals await you.">
+                <img src="images/Sydney.png" alt="Sydney">
+                <h3>Sydney</h3>
+                <p>Beautiful beaches, iconic Opera House, and friendly locals await you.</p>
+                <div class="destination-footer">
+                    <button class="btn open-dialog" data-target="dest-dialog">Learn More</button>
+                    <a href="packages.html" class="btn">View Packages</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Destination details dialog -->
+    <dialog id="dest-dialog" aria-labelledby="dest-title">
+        <button class="close-btn" onclick="document.getElementById('dest-dialog').close()" aria-label="Close">✕</button>
+
+        <div class="dialog-grid">
+            <div class="left">
+                <img id="dest-img" src="images/Dubai.png" alt="">
+                <div class="about">
+                    <h2 id="dest-title">Dubai</h2>
+                    <p id="dest-desc">Dubai is one of the most exciting cities in the world...</p>
+                </div>
+
+                <div class="info-box">
+                    <h2>Basic Information</h2>
+                    <table>
+                        <tr>
+                            <td>Country</td>
+                            <td id="info-country">UAE</td>
+                        </tr>
+                        <tr>
+                            <td>Language</td>
+                            <td id="info-lang">Arabic</td>
+                        </tr>
+                        <tr>
+                            <td>Currency</td>
+                            <td id="info-curr">dirham</td>
+                        </tr>
+                        <tr>
+                            <td>Area</td>
+                            <td id="info-area">2,058 Square Miles</td>
+                        </tr>
+                        <tr>
+                            <td>Population</td>
+                            <td id="info-pop">55M</td>
+                        </tr>
+                        <tr>
+                            <td>Time Zone</td>
+                            <td id="info-tz">UTC+4</td>
+                        </tr>
+                        <tr>
+                            <td>Best Time to Visit</td>
+                            <td id="info-best">Oct - Apr</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="map-box">
+                    <h3>City Map</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=YOUR_EMBED_CODE_HERE" width="100%" height="300"
+                        style="border: 1px solid #666;" loading="lazy">
+                    </iframe>
+                </div>
+
+                <div class="weather-box">
+                    <h3>Weather</h3>
+                    <ul>
+                        <li><span>Jan - Feb</span> <span>12°C - 18°C</span></li>
+                        <li><span>Mar - Apr</span> <span>20°C - 30°C</span></li>
+                        <li><span>May - Jun</span> <span>30°C - 40°C</span></li>
+                        <li><span>Jul - Aug</span> <span>35°C - 45°C</span></li>
+                        <li><span>Sep - Oct</span> <span>28°C - 35°C</span></li>
+                        <li><span>Nov - Dec</span> <span>18°C - 25°C</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </dialog>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Travel Agency</h3>
+                    <p>We help you achieve your dreams of traveling around the world with the best prices and premium
+                        services.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="destination.html">Destinations</a></li>
+                        <li><a href="packages.html">Packages</a></li>
+                        <li><a href="booking.html">Booking</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Travel Street, Cairo</li>
+                        <li><i class="fas fa-phone"></i> +20 100 123 4567</li>
+                        <li><i class="fas fa-envelope"></i> info@travelagency.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>All rights reserved &copy; 2024 Travel Agency</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // basic dialog open/populate behavior
+        const dialog = document.getElementById('dest-dialog');
+        document.querySelectorAll('.open-dialog').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                const card = e.target.closest('.destination-card');
+                if (!card) return;
+                const name = card.dataset.name || 'Destination';
+                const img = card.dataset.img || '';
+                const desc = card.dataset.desc || '';
+                document.getElementById('dest-img').src = img;
+                document.getElementById('dest-img').alt = name;
+                document.getElementById('dest-title').textContent = name;
+                document.getElementById('dest-desc').textContent = desc;
+                dialog.showModal();
+            });
+        });
+
+        // close on outside click
+        dialog.addEventListener('click', (e) => {
+            const rect = dialog.getBoundingClientRect();
+            if (e.clientX < rect.left || e.clientX > rect.right || e.clientY < rect.top || e.clientY > rect.bottom) {
+                dialog.close();
+            }
+        });
+    </script>
+</body>
+
+</html>
